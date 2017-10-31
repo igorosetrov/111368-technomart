@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Игорь Осетров](https://up.htmlacademy.ru/htmlcss/19/user/111368).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker).
 
 ---
 
