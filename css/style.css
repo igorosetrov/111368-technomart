@@ -46,6 +46,9 @@
   font-weight: normal;
 }
 
+/* --- base --- */
+
+
 /* ---body--- */
 
 body {
@@ -87,6 +90,10 @@ body {
   background-color: #ee3643;
 }
 
+.icon-search {
+  background: url("../img/icon/icon-search.png");
+}
+
 .header-middle {
   display: flex;
   flex-direction: column;
@@ -124,3 +131,67 @@ body {
   text-decoration: none;
   color: #fff;  
 }
+
+/* ---  --- */
+
+
+/* --- promo --- */
+
+
+
+
+
+
+/* --- popular-goods --- */
+.submenu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: #f9f5f0;
+}
+
+.submenu h2 {
+  margin-left: 28px;
+  font-family: "Cuprum", "Arial";
+  font-style: 16px;
+  text-transform: uppercase;
+}
+
+.popular-goods_btn,
+.popular-manufacturers_btn {
+  position: relative;
+  margin: 25px 22px;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #fff;
+  background:#ee3643;
+}
+
+.popular-manufacturers_btn {
+  
+}
+
+.goods {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* --- popular-manufacturers --- */
+
+
+
+/* --- services --- */
+
+
+
+/* ---  --- */
+
+
+
+/* --- footer --- */
+.footer-top {
+  display: flex;
+  flex-direction: row;
+}
+
