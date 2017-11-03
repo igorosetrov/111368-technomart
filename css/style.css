@@ -48,6 +48,21 @@
 
 /* --- base --- */
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+p {
+  margin: 0;
+  font-weight: normal;
+}
+
+ul {
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
 
 /* ---body--- */
 
@@ -143,15 +158,15 @@ body {
 
 
 /* --- popular-goods --- */
-.submenu {
+.galleri-title {
   display: flex;
   justify-content: space-between;
   width: 100%;
   background: #f9f5f0;
 }
 
-.submenu h2 {
-  margin-left: 28px;
+.galleri-title h2 {
+  margin: 20px 10px 20px 28px;
   font-family: "Cuprum", "Arial";
   font-style: 16px;
   text-transform: uppercase;
@@ -165,6 +180,7 @@ body {
   text-decoration: none;
   color: #fff;
   background:#ee3643;
+  border-radius: 3px;
 }
 
 .popular-manufacturers_btn {
