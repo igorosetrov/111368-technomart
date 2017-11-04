@@ -5,84 +5,45 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>HTML Academy: Техномарт</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="icon" type="image/x-icon" href="img/...">  -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
-    <!-- <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p> -->
     <header class="header">
       <div class="container">
         <div class="header-top">
-          <div class="header-logo">
-            <a href="index.html">
-              <span class="logo">Техномарт</span>
-            </a>
-          </div>
-          <div class="search">
-            <a href="#">
-              <i class="icon-search"></i>
-              <span class="">Поиск:</span>
-            </a>
-          </div>
-          <div class="bookmarks">
-            <a href="#">
-              <i class="icon-bookmark"></i>
-              <span class="">Закладки: 0</span>
-            </a>
-          </div>
-          <div >
-            <a href="#">
-              <i class=" icon-basket"></i>
-              <span class="">Корзина: 10</span>
-            </a>
-          </div>
-          <div class="order">
-            <a href="#">
-              <span class="">Оформить заказ</span>
-            </a>
-          </div>
+          <a href="#" class="header-logo">Техномарт</a>
+          <form action="" class="search">
+            <input type="submit" class="icon-search">
+            <input type="search">
+          </form>
+          <a href="#" class="bookmarks">Закладки: 0</a>
+          <a href="#" class=" icon-basket">Корзина: 0</a>
+          <a href="#" class="order">Оформить заказ</a>
         </div>
         <div class="header-middle">
           <div class="header-info">
             <div class="header-about">
-              <span>Интернет-магазин строительных материалов и инструментов для ремонта</span>
+              Интернет-магазин строительных материалов и инструментов для ремонта
             </div>
             <div class="header-contact">
-              <div class="header-contact_phone"><i class="icon-phone"></i>+7 (495) 555-05-55</div>
-              <div class="header-contact_address">Москва, ул. строителей, д. 15</div>       
+              <div class="header-phone">+7 (495) 555-05-55</div>
+              <div class="header-address">Москва, ул. строителей, д. 15</div>       
             </div>
-            <div class="">
-              <i class="icon-login"></i>
-              <span class="enter">Вход</span>
-              <span class="registration">Регистрация</span>           
-            </div>
-          </div>
-            
-          <div class="header-menu">
-            <div>
-              <a href="index.html">Главная</a>
-            </div>
-            <div>
-              <a href="#">Компания</a>
-            </div>
-            <div>
-              <a href="catalog.html">Каталог</a>
-            </div>
-            <div>
-              <a href="#">Новости</a>
-            </div>
-            <div>
-              <a href="#">Спецпредложения</a>
-            </div>
-            <div>
-              <a href="#">Доставка</a>
-            </div>
-            <div>
-              <a href="#">Контакты</a>
+            <div class="header-login">
+              <a href="#" class="enter">Вход</a>
+              <a href="" class="registration">Регистрация</a>           
             </div>
           </div>
+          <nav class="header-menu">
+            <a href="index.html">Главная</a>
+            <a href="#">Компания</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="#">Новости</a>
+            <a href="#">Спецпредложения</a>
+            <a href="#">Доставка</a>
+            <a href="#">Контакты</a>
+          </nav>
         </div>
       </div>           
     </header>
@@ -119,18 +80,18 @@
       </nav>
 
       <div class="catalog-items">
-        <div class="catalog-item">
+        <article class="catalog-item">
           <div class="image"><img src="/img" alt=""></div>
           <div class="title">Перфоратор BOSCH BFG 3000</div>
           <div class="discount">22500 Р.</div>
           <div class="price">15500 Р.</div>
-        </div>
-        <div class="catalog-item">
+        </article>
+        <article class="catalog-item">
           <div class="image"><img src="/img" alt=""></div>
           <div class="title">Перфоратор BOSCH BFG 6000</div>
           <div class="discount">30500 Р.</div>
           <div class="price">25500 Р.</div>
-        </div>
+        </article>
         <div class="catalog-item">
           <div class="flag"></div>
           <div class="image"><img src="/img" alt=""></div>
@@ -138,44 +99,44 @@
           <div class="discount"></div>
           <div class="price">12500 Р.</div>
         </div>
-        <div class="catalog-item">
+        <article class="catalog-item">
           <div class="image"><img src="/img" alt=""></div>
           <div class="title">Перфоратор BOSCH BFG 3000</div>
           <div class="discount">22500 Р.</div>
           <div class="price">15500 Р.</div>
-        </div>
-        <div class="catalog-item">
+        </article>
+        <article class="catalog-item">
           <div class="flag"></div>
           <div class="image"><img src="/img" alt=""></div>
           <div class="title">Перфоратор BOSCH BFG 6000</div>
           <div class="discount">30500 Р.</div>
           <div class="price">25500 Р.</div>
-        </div>
-        <div class="catalog-item">
+        </article>
+        <article class="catalog-item">
           <div class="image"><img src="/img" alt=""></div>
           <div class="title">Перфоратор BOSCH BFG 2000</div>
           <div class="discount"></div>
           <div class="price">12500 Р.</div>
-        </div>
-        <div class="catalog-item">
+        </article>
+        <article class="catalog-item">
           <div class="flag"></div>
           <div class="image"><img src="/img" alt=""></div>
           <div class="title">Перфоратор BOSCH BFG 3000</div>
           <div class="discount">22500 Р.</div>
           <div class="price">15500 Р.</div>
-        </div>
-        <div class="catalog-item">
+        </article>
+        <article class="catalog-item">
           <div class="image"><img src="/img" alt=""></div>
           <div class="title">Перфоратор BOSCH BFG 6000</div>
           <div class="discount">30500 Р.</div>
           <div class="price">25500 Р.</div>
         </div>
-        <div class="catalog-item">
+        <article class="catalog-item">
           <div class="image"><img src="/img" alt=""></div>
           <div class="title">Перфоратор BOSCH BFG 2000</div>
           <div class="discount"></div>
           <div class="price">12500 Р.</div>
-        </div>
+        </article>
       </div>
 
       <div class="pagination">
@@ -186,8 +147,7 @@
       </div>
     </main>
 
-    <article class="container">
-    <!-- А так можно делать или нет -->
+    <article class="">
       <h2>Пара слов о перфораторах</h2>
       <p>Перфоратор - это универсальный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетона и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, нруповерта и отбойного молотка. В ассортиментном ряду есть выбор <q>трехрежимнеков</q>: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
     </article>
