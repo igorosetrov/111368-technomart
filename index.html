@@ -30,8 +30,8 @@
               <div class="header-address">Москва, ул. строителей, д. 15</div>
             </div>
             <div class="header-login">
-              <a href="#" class="enter">Вход</a>
-              <a href="" class="registration">Регистрация</a>
+              <a href="#" class="login-link">Вход</a>
+              <a href="#" class="registration">Регистрация</a>
             </div>
           </div>
           <nav class="header-menu">
@@ -221,14 +221,33 @@
           </div>
         </div>
       </footer>
-      <section class="modal modal-message">
-        <h2 class="visually-hidden">Наше местоположение</h2>
-        <!-- Здесь будет форма отправки сообщения -->
-        <span class="modal-close">x</span>
-      </section>
       <section class="modal modal-map">
+        <h2 class="visually-hidden">Наше местоположение</h2>
+        <p>
+          <img src="img/map.jpg" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 18.8 +7 (812) 555-05-55">
+        </p>
+        <button class="modal-close" type="button">Закрыть</button>
+      </section>
+      <section class="modal modal-message">
         <h2 class="visually-hidden">Заблудились? Напишите нам!</h2>
-        <span class="modal-close">x</span>
+          <form class="message" action="http://echo.htmlacademy.ru" method="post">
+            <p>
+              <label for="message-name">Ваше имя</label>
+              <input id="message-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+            </p>
+            <p>
+              <label for="message-email">Ваш e-mail</label>
+              <input id="message-email" type="text" placeholder="Для отправки ответа">
+            </p>
+            <p>
+              <label for="message-field">Текст письма:</label>
+              <textarea name="text" id="message-field" cols="30" rows="5" placeholder="В свободной форме"></textarea>
+            </p>
+            <p>
+              <button class="button" type="submit">Отправить</button>
+            </p>
+          </form>
+        <button class="modal-close" type="button">Закрыть</button>
       </section>
     </div>
   </body>
