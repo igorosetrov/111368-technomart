@@ -45,3 +45,92 @@
   font-style: normal;
   font-weight: bold;
 }
+
+ /* --- header ---*/
+
+.header {
+  font-family: "Cuprum", "Arial", serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.header-top {
+  background-color: #293449;
+}
+
+.header-top a {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-top .header-logo {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.header-middle {
+  background-color: #f3f7f8;
+}
+
+.header-about {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  color: #ee3643;
+}
+
+.header-phone {
+  font-size: 21px;
+  line-height: 18px;
+  font-style: normal;
+  color: #ee3643;
+}
+
+.header-address {
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+  color: #32425c;
+}
+
+.header-menu {
+  width: 940px;
+  height: 56px;
+  font-size: 17px;
+  line-height: 17px;
+  background-color: #32425c;
+}
+
+.header-menu a {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-menu a:hover {
+  background-color: #293449;
+}
+
+.header-menu a:active {
+  color: #8e939c;
+  background-color: #1d2739;
+}
+
+/* --- promo --- */
+
+
+
+
+
+
+
+
+
+
+
+
+
