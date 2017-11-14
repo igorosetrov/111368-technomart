@@ -46,12 +46,21 @@
   font-weight: bold;
 }
 
+/* --- body --- */
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
  /* --- header ---*/
 
 .header {
-  font-family: "Cuprum", "Arial", serif;
-  font-style: normal;
-  font-weight: normal;
+
 }
 
 .header-top {
@@ -123,11 +132,106 @@
 /* --- promo --- */
 
 
+.materials {
+  background-color: #ffbf47;
+}
 
+.instruments {
+  background-color: #3bbce3;
+}
 
+.equipment {
+  background-color: #dc91d8;
+}
 
+.discount {
+  background-color: #8ed78f;
+}
 
+.delivery {
+  background-color: #ffc047;
+}
 
+.materials h3,
+.instruments h3,
+.equipment h3,
+.discount h3,
+.delivery h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.materials a,
+.instruments a,
+.equipment a,
+.discount a,
+.delivery a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: rgba(229, 229, 229, .1);
+}
+
+.materials a:hover,
+.instruments a:hover,
+.equipment a:hover,
+.discount a:hover,
+.delivery a:hever {
+  background-color: rgba(204, 204, 204, .2);
+}
+
+.materials a:active,
+.instruments a:active,
+.equipment a:active,
+.discount a:active,
+.delivery a:active  {
+  background-color: rgba(178, 178, 178, .3);
+}
+
+/* --- popular-goods --- */
+
+.galleri-title {
+  display: flex;
+  background-color: #f9f5f0;
+}
+
+.galleri-title h2 {
+  font-size: 30px;
+  font-weight: 30px;
+  text-transform: uppercase;
+}
+
+.galleri-title a {
+  margin: 25px 5px;
+  padding: 5px 45px;
+  font-size: 14px;
+  font-weight: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;background-color: #ee3643;
+}
+
+h3 .title {
+  font-family: "PTSans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  font-weight: 20px;
+  color: #000000;
+}
+
+.discount-item {
+  font-family: "PTSans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  font-weight: 20px;
+  text-decoration: line-through;
+  color: #a9a9a9;
+
+}
 
 
 
