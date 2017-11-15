@@ -57,6 +57,10 @@ body {
   font-weight: normal;
 }
 
+a {
+  text-decoration: none;
+}
+
  /* --- header ---*/
 
 .header {
@@ -71,7 +75,6 @@ body {
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
-  text-decoration: none;
 }
 
 .header-top .header-logo {
@@ -123,7 +126,6 @@ input[type="search"] {
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
 
@@ -132,7 +134,6 @@ input[type="search"] {
   line-height: 18px;
   color: #32425c;
 }
-
 
 
 .header-menu {
@@ -147,7 +148,6 @@ input[type="search"] {
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
-  text-decoration: none;
 }
 
 .header-menu a:hover {
@@ -202,7 +202,6 @@ input[type="search"] {
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
-  text-decoration: none;
   background-color: rgba(0, 0, 0, .1);
 }
 
@@ -239,7 +238,6 @@ input[type="search"] {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  text-decoration: none;
   color: #ffffff;
   background-color: #ee3643;
 }
@@ -304,7 +302,6 @@ dl dd {
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
-  text-decoration: none;
   background-color: #ee3643;
 }
 
@@ -315,7 +312,6 @@ dl dd {
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
-  text-decoration: none;
   border: 1px solid #e5e5e5;
   border-radius: 3%;
 }
@@ -337,7 +333,7 @@ dl dd {
 }
 
 .breadcrumbs a {
-  text-decoration: none;
+  //text-decoration: none;
 }
 
 
@@ -347,7 +343,6 @@ dl dd {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
 
@@ -386,7 +381,6 @@ article p {
   line-height: 30px;
   color: #ffffff;
   text-transform: uppercase;
-  text-decoration: none;
   background-color: #ee3643;
 }
 
@@ -399,7 +393,6 @@ article p {
 .column-right a {
   font-size: 18px;
   line-height: 24px;
-  text-decoration: none;
   color: #f1f5f7;
 }
 
@@ -419,8 +412,6 @@ article p {
   text-decoration: none;
   opacity: .5;
 }
-
-
 
 
 .footer-bottom {
