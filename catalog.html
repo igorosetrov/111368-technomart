@@ -14,8 +14,8 @@
         <div class="header-top">
           <a href="index.html" class="header-logo">Техномарт</a>
           <form method="post" action="http://echo.htmlacademy.ru" class="search">
+            <input type="submit" value="">
             <input type="search" placeholder="Поиск:" class="icon-search">
-            <!-- <input type="submit"> -->
           </form>
           <a href="#" class="bookmarks">Закладки: 0</a>
           <a href="#" class="icon-basket current">Корзина: 10</a>
@@ -32,8 +32,8 @@
             </div>
             <div class="header-login">
               <a href="#" class="login-out">Равшан Джамшутович</a>
-              <a href="#">Мои заказы</a>
-              <a href="#">Личный кабинет</a>
+              <a href="#" class="orders">Мои заказы</a>
+              <a href="#" class="personal">Личный кабинет</a>
             </div>
           </div>
           <nav class="header-menu">
@@ -48,7 +48,6 @@
         </div>
       </div>
     </header>
-
     <main class="container">
       <div class="breadcrumbs">
         <ul class="breadcrumbs">
@@ -175,19 +174,17 @@
           </div>
         </section>
         <div class="pagination">
-          <a href="#1" class="current">1</a>
-          <a href="#2">2</a>
-          <a href="#3">3</a>
+          <a class="current">1</a>
+          <a>2</a>
+          <a>3</a>
           <a href="#next">Следующая</a>
         </div>
       </div>
     </main>
-
     <article class="container">
       <h2>Пара слов о перфораторах</h2>
       <p>Перфоратор - это универсальный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетона и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, нруповерта и отбойного молотка. В ассортиментном ряду есть выбор <q>трехрежимнеков</q>: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
     </article>
-
     <div class="container">
       <footer class="footer">
         <div class="footer-top">
@@ -199,7 +196,7 @@
             </div>
           </div>
           <div class="column-right">
-            <a href="#">Компания</a>
+            <a href="index.html">Компания</a>
             <a href="#">Новости</a>
             <a href="catalog.html">Каталог</a>
             <a href="#">Доставка</a>
@@ -230,8 +227,10 @@
       </footer>
       <section class="modal modal-purchases">
         <h3>Товар добавлен в корзину!</h3>
-        <a href="#">Оформить заказ</a>
-        <a href="#">Продолжить покупки</a>
+        <p>
+          <a href="#" class="order">Оформить заказ</a>
+          <a href="#" class="purchases">Продолжить покупки</a>
+        </p>
         <button class="modal-close" type="button">Закрыть</button>
       </section>
     </div>

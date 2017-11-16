@@ -51,7 +51,6 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "Cuprum", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -63,11 +62,26 @@ a {
 
  /* --- header ---*/
 
-.header {
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.header {
 }
 
 .header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 41px;
   background-color: #293449;
 }
 
@@ -78,9 +92,11 @@ a {
 }
 
 .header-top .header-logo {
+  padding: 9px 55px 8px 55px;
   text-transform: uppercase;
   font-size: 24px;
   line-height: 24px;
+  background-color: #ee3643;
 }
 
 input[type="search"] {
@@ -89,6 +105,16 @@ input[type="search"] {
   color: #ffffff;
   background-color: #293449;
   border: none;
+}
+
+input[type="submit"] {
+  border: 0;
+  background: url("../img/icon/icon-search.svg") no-repeat center;
+}
+
+.header-top .order {
+  padding: 11px 21px 12px 21px;
+  background-color: #63a63e;
 }
 
 .header-middle {
@@ -114,20 +140,23 @@ input[type="search"] {
   color: #32425c;
 }
 
-.header-login {
-  background-color: #ffffff;
-}
-
-
-.login-link,
-.login-out,
-.registration {
+.header-login .login-link,
+.header-login .registration,
+.header-login .login-out {
+  padding: 5px 55px;
   font-size: 21px;
   line-height: 18px;
   color: #000000;
-  text-transform: uppercase;
+  background-color: #ffffff;
 }
 
+.login-link {
+  background: url("../img/icon/icon-login.svg") no-repeat 10% 50%;
+}
+
+.login-out {
+  background: url("../img/icon/icon-user.svg") no-repeat 10% 50%;
+}
 
 .header-login a {
   font-size: 16px;
@@ -135,10 +164,12 @@ input[type="search"] {
   color: #32425c;
 }
 
+.header-login .orders,
+.header-login .personal {
+  text-decoration: underline;
+}
 
 .header-menu {
-  width: 940px;
-  height: 56px;
   font-size: 17px;
   line-height: 17px;
   background-color: #32425c;
@@ -161,7 +192,45 @@ input[type="search"] {
 
 /* --- promo --- */
 
+.promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.promo h3 {
+  margin: 0;
+}
+
+.column1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 620px;
+}
+
+.materials,
+.instruments,
+.equipment,
+.discount,
+.delivery {
+  width: 300px;
+  height: 123px;
+  margin-bottom: 20px;
+}
+
 .materials {
+  margin-right: 20px;
   background-color: #ffbf47;
 }
 
@@ -186,6 +255,8 @@ input[type="search"] {
 .equipment h3,
 .discount h3,
 .delivery h3 {
+  padding-left: 23px;
+  padding-top: 26px;
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
@@ -197,7 +268,9 @@ input[type="search"] {
 .equipment a,
 .discount a,
 .delivery a {
-  padding: 14px 24px;
+  margin-left: 25px;
+  margin-top: 17px;
+  padding: 14px 23px;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
@@ -221,25 +294,38 @@ input[type="search"] {
   background-color: rgba(0, 0, 0, .3);
 }
 
-/* --- popular-goods --- */
-
-.galleri-title {
-  display: flex;
-  background-color: #f9f5f0;
+.slider {
+  width: 620px;
+  height: 265px;
+  background-image: url("../img/pic/slider1.jpg");
 }
 
-.galleri-title h2 {
+/* --- popular-goods --- */
+
+.gallery-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f9f5f0;
+  margin-bottom: 20px;
+}
+
+.gallery-title h2 {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
-.galleri-title a {
+.gallery-title a {
+  padding: 10px 55px;
   font-size: 14px;
   line-height: 18px;
-  text-transform: uppercase;
   color: #ffffff;
+  text-transform: uppercase;
   background-color: #ee3643;
+  border-radius: 3px;
 }
 
 .catalog-item h3 {
@@ -257,6 +343,24 @@ input[type="search"] {
   line-height: 20px;
   text-decoration: line-through;
   color: #a9a9a9;
+}
+
+.goods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.goods .catalog-item {
+  text-align: center;
+}
+
+.catalog-item {
+  width: 218px;
+  border: 1px solid #eaeaea;
+  margin-bottom: 20px;
 }
 
 /* --- services ---  */
@@ -305,8 +409,13 @@ dl dd {
   background-color: #ee3643;
 }
 
+.information {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .pagination a {
-  padding: 12px 15px 14px 16px;
   font-family: "PTSans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -323,17 +432,20 @@ dl dd {
 .pagination a:active {
   border: 1px solid #ee3643;
 }
+
 /* --- breadcrumbs ---  */
+
 .breadcrumbs {
   font-family: "PTSans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
+  color: #000000;
   text-transform: uppercase;
   list-style: none;
 }
 
 .breadcrumbs a {
-  //text-decoration: none;
+  color: #000000;
 }
 
 
@@ -345,9 +457,13 @@ dl dd {
   text-transform: uppercase;
 }
 
-
-
-
+.goods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
 
 /* --- article ---  */
 
@@ -368,10 +484,8 @@ article p {
   color: #000000;
 }
 
-
 /* --- footer ---  */
 .footer-top {
-
 
   background-color: #32425c;
 }
@@ -413,7 +527,6 @@ article p {
   opacity: .5;
 }
 
-
 .footer-bottom {
 
   background-color: #293449;
@@ -438,3 +551,30 @@ article p {
   color: #ffd180;
 }
 
+/* --- modal --- */
+
+.modal-purchases h3 {
+  font-size: 30px;
+  line-height: 18px;
+  background: url("../img/icon/form-1.svg") no-repeat 5% 50%;
+}
+
+.modal-purchases p {
+  background-color: #f1f1f1;
+}
+
+.modal-purchases .order {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.modal-purchases .purchases {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffffff;
+}
