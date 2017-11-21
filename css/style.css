@@ -344,18 +344,20 @@ input[type="submit"] {
   display: -ms-flexbox;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #f9f5f0;
   margin-bottom: 20px;
 }
 
 .gallery-title h2 {
+  margin-left: 30px;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
 .gallery-title a {
+  margin-right: 24px;
   padding: 10px 55px;
   font-size: 14px;
   line-height: 18px;
@@ -400,6 +402,24 @@ input[type="submit"] {
   margin-bottom: 20px;
 }
 
+/* --- manufacturers ---  */
+
+.manufacturers {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.manufacturers a {
+  width: 220px;
+  height: 145px;
+  margin-right: 20px;
+}
+
+.manufacturers a:nth-child(4n) {
+  margin-right: 0px;
+}
+
 /* --- services ---  */
 
 .services h2 {
@@ -417,6 +437,25 @@ dl dt {
 dl dd {
   font-size: 13px;
   line-height: 24px;
+}
+
+.information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.information-company p:nth-child(2) {
+  width: 500px;
+}
+
+.information-company p:nth-child(3) {
+  width: 391px;
+}
+
+.information-contact p {
+  width: 200px;
 }
 
 .information-company h2,
@@ -474,6 +513,9 @@ dl dd {
 .pagination a:active {
   border: 1px solid #ee3643;
 }
+
+
+
 
 /* --- breadcrumbs ---  */
 
