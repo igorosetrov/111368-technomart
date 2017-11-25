@@ -633,26 +633,53 @@ input[type="submit"] {
 }
 /* --- services ---  */
 
-.services-wrapper {
+.services {
   width: 100%;
   background-color: #f4f8fa;
 }
 
 .services h2 {
+  padding-top: 20px;
   font-size: 30px;
   line-height: 24px;
   text-transform: uppercase;
 }
 
+.services-link {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  font-size: 21px;
+  line-height: 30px;
+}
+
+dl {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+}
+
 dl dt {
+  //width: 360px;
+  padding: 20px;
+
+
   font-size: 36px;
   line-height: 24px;
   text-transform: uppercase;
 }
 
 dl dd {
+  //width: 360px;
+  //position: absolute;
+  display: none;
+
   font-size: 13px;
   line-height: 24px;
+}
+
+dd.delivery-info.active {
+  display: block;
 }
 
 .information {
@@ -661,6 +688,12 @@ dl dd {
   justify-content: space-between;
   margin-bottom: 80px;
 }
+
+
+
+
+
+/* --- information --- */
 
 .information-company p:nth-child(2) {
   width: 500px;
