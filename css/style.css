@@ -48,11 +48,11 @@
 
 /* --- body --- */
 
-/*
+
 * {
   outline: 1px solid red;
 }
-*/
+
 
 body {
   margin: 0;
@@ -302,7 +302,8 @@ input[type="submit"] {
 
 .header-login .login-link,
 .header-login .registration,
-.header-login .login-in {
+.header-login .login-in,
+.header-login .login-out {
   font-size: 21px;
   line-height: 18px;
   color: #000000;
@@ -354,12 +355,39 @@ input[type="submit"] {
   padding: 11px 25px 11px 25px;
 }
 
-.login-in {
-  padding: 11px 17px 11px 45px;
+.header-login  {
+  position: relative;
 }
 
-.header-login {
-  //margin-top: 13px;
+.header-login::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 28px;
+  width: 20px;
+  height: 17px;
+  background-image: url("../img/icon/icon-user.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: .5;
+}
+
+.header-login p {
+  margin: 0;
+}
+
+.header-login .wrapper {
+  display: flex;
+}
+
+.login-out {
+  width: 49px;
+  height: 45px;
+  background: url("../img/icon/icon-logout.svg") no-repeat center;
+}
+
+.login-in {
+  padding: 12px 14px 10px 45px;
 }
 
 .header-login p {
