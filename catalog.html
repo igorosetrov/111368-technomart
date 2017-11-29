@@ -15,8 +15,8 @@
           <div class="header-top">
             <a href="#" class="header-logo">Техномарт</a>
             <form method="post" action="http://echo.htmlacademy.ru" class="search">
-              <input type="submit" value="">
-              <input type="search" placeholder="Поиск:">
+              <input type="submit" class="visually-hidden">
+              <input type="search" placeholder="Поиск:" class="search">
             </form>
             <a href="#" class="bookmarks">Закладки: 0</a>
             <a href="#" class="icon-basket">Корзина: 0</a>
@@ -36,14 +36,11 @@
                 <div class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19./18</div>
               </div>
               <div class="header-login">
-                <p class="wrapper">
                   <a href="#" class="login-in">Равшан Джамшутович</a>
                   <a href="#" class="login-out" title="Выход"></a>
-                </p>
-                <p>
                   <a href="#" class="orders">Мои заказы</a>
+                  <div class="point"></div>
                   <a href="#" class="personal">Личный кабинет</a>
-                </p>
               </div>
             </div>
             <nav class="header-menu">
@@ -75,8 +72,23 @@
         <section class="filters">
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <p>Фильтр:</p>
+          <h3>Цена</h3>
           <form class="filter" action="http://echo.htmlacademy.ru" method="post">
-            <fieldset>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+              <div class="price-controls">
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">от <input type="text" name="max-price" value="15000"></label>
+              </div>
+            </div>
+
+            <fieldset class="filter-item">
               <legend>Производители:</legend>
               <p>
                 <input class="visually-hidden" type="checkbox" checked id="filter-bosch">
