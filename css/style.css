@@ -409,11 +409,17 @@ input[type="search"]:focus {
   margin-left: 69px;
 }
 
-.header-login::before {
+.login-in {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 12px 14px 10px 45px;
+}
+
+.login-in::before {
   content: "";
   position: absolute;
   top: 12px;
-  left: 13px;
+  left: 14px;
   width: 20px;
   height: 17px;
   background-image: url("../img/icon/icon-user.svg");
@@ -428,10 +434,7 @@ input[type="search"]:focus {
   background: url("../img/icon/icon-logout.svg") no-repeat center;
 }
 
-.login-in {
-  margin-bottom: 10px;
-  padding: 12px 14px 10px 45px;
-}
+
 
 .header-login a {
   position: relative;
